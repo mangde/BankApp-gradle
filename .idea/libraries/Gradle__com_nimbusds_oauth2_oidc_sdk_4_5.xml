@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.nimbusds:oauth2-oidc-sdk:4.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/nimbusds/oauth2-oidc-sdk/4.5/oauth2-oidc-sdk-4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/nimbusds/oauth2-oidc-sdk/4.5/oauth2-oidc-sdk-4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

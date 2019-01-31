@@ -1,0 +1,8 @@
+rootProject.name = 'BankApp-gradle'
+include 'BankApp-config'
+include 'BankApp-MainAppRunner'
+include 'BankApp-Controller'
+include 'BankApp-Dao'
+include 'BankApp-Service'
+include 'BankApp-Model'
+

@@ -1,0 +1,19 @@
+group 'com.nuance.him.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':BankApp-Dao')
+    compile project(':BankApp-Model')
+    testCompile 'org.testng:testng:6.8.21'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.springframework.boot:spring-boot-starter-test:1.3.0.RELEASE'
+}
+

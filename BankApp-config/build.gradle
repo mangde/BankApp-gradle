@@ -1,0 +1,24 @@
+group 'com.nuance.him.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+dependencies {
+    compile 'com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8'
+    compile project(':BankApp-Service')
+    compile project(':BankApp-Controller')
+    compile 'org.springframework.boot:spring-boot-starter-jdbc:1.3.0.RELEASE'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'org.testng:testng:6.8.21'
+    testCompile 'org.springframework.boot:spring-boot-starter-test:1.3.0.RELEASE'
+}

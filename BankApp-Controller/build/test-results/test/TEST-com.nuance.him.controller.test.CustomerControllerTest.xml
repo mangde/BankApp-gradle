@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nuance.him.controller.test.CustomerControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-31T09:20:24" hostname="PUN-YMANGDE01" time="0.03">
+  <properties/>
+  <testcase name="testAddCustomer" classname="com.nuance.him.controller.test.CustomerControllerTest" time="0.005"/>
+  <testcase name="testDisplayCustomers" classname="com.nuance.him.controller.test.CustomerControllerTest" time="0.006"/>
+  <testcase name="testFindCustomerById" classname="com.nuance.him.controller.test.CustomerControllerTest" time="0.003"/>
+  <system-out><![CDATA[14:50:24.594 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing POST request for [/bank/addCustomer]
+14:50:24.594 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/addCustomer
+14:50:24.594 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity com.nuance.him.controller.customer.CustomerController.addNewCustomer(com.nuance.him.model.customer.Customer)]
+14:50:24.594 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'customerController'
+14:50:24.596 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.nuance.him.model.customer.Customer] as "application/json" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@a504b0f]
+14:50:24.597 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Customer is registered successfully
+ customerID: 0] as "application/json" using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.597 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.597 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.606 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/bank/displayCustomer]
+14:50:24.606 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/displayCustomer
+14:50:24.606 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<com.nuance.him.model.customer.Customer> com.nuance.him.controller.customer.CustomerController.displayCustomers()]
+14:50:24.606 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'customerController'
+14:50:24.606 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/bank/displayCustomer] is: -1
+14:50:24.611 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [[]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@a504b0f]
+14:50:24.611 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.611 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.621 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/bank/getCustomerById]
+14:50:24.621 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/getCustomerById
+14:50:24.621 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<java.lang.Object> com.nuance.him.controller.customer.CustomerController.getCustomerById(int)]
+14:50:24.621 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'customerController'
+14:50:24.621 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/bank/getCustomerById] is: -1
+14:50:24.623 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.623 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

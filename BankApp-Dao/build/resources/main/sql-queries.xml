@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="addCustomer">
+        <![CDATA[INSERT INTO CUSTOMER_DETAIL(name,phone) VALUES(:name,:phone)]]>
+    </entry>
+    <entry key="addAddress">
+        <![CDATA[INSERT INTO ADDRESS(address1,city,customerId) VALUES(:address,:city,:customerId)]]>
+    </entry>
+    <entry key="selectAllCustomers">
+        <![CDATA[SELECT c.customerId,name,phone,address1,city
+                    FROM CUSTOMER_DETAIL c
+                    INNER JOIN ADDRESS a
+                    ON c.customerId=a.customerId
+                    GROUP BY c.customerId,name,phone, address1,city
+        ]]>
+    </entry>
+    <entry key="getCustomerById">
+        <![CDATA[SELECT c.customerId,name,phone,address1,city
+                    FROM CUSTOMER_DETAIL c
+                    INNER JOIN ADDRESS a
+                    ON c.customerId=a.customerId
+					WHERE c.customerId=:customerId
+                    GROUP BY c.customerId,name,phone, address1,city]]>
+    </entry>
+    <entry key="addAccount">
+        <![CDATA[INSERT INTO ACCOUNT_DETAIL(accTypeId,balance,customerId) VALUES(:accTypeId,:balance,:customerId)]]>
+    </entry>
+    <entry key="getAccTypeId">
+        <![CDATA[SELECT accTypeId FROM ACCOUNT_TYPE WHERE accTypeDesc= :type]]>
+    </entry>
+    <entry key="getBalance">
+        <![CDATA[SELECT balance FROM ACCOUNT_DETAIL WHERE accNumber = :accNumber]]>
+    </entry>
+    <entry key="depositeAmount">
+        <![CDATA[UPDATE ACCOUNT_DETAIL SET balance=:amount WHERE accNumber=:accNumber ]]>
+    </entry>
+    <entry key="accountDetail">
+        <![CDATA[SELECT accNumber,accTypeId,balance,customerId FROM ACCOUNT_DETAIL WHERE accNumber=:accNumber ]]>
+    </entry>
+    <entry key="transfer">
+        <![CDATA[INSERT INTO TRANSACTION_DETAIL(dateTime,amount,accFrom,accTo,description) VALUES(:dateTime,:amount ,:accFrom,:accTo,:description)]]>
+    </entry>
+    <entry key="withDraw">
+        <![CDATA[UPDATE ACCOUNT_DETAIL SET balance=:amount WHERE accNumber=:accNumber ]]>
+    </entry>
+    <entry key="transactionHistory">
+        <![CDATA[SELECT transactionId,dateTime,amount,accFrom,accTo,description FROM TRANSACTION_DETAIL WHERE accFrom=:accNumber OR accTo=:accNumber ]]>
+    </entry>
+    <entry key="issueAtm">
+        <![CDATA[INSERT INTO ATM_DETAIL(atmNumber,accNumber,atmPin,cvvNumber,activateDate,validFrom,validUpTo,cardType) VALUES(:atmNumber,:accNumber,:atmPin,:cvvNumber,:activateDate,:validFrom,:validUpTo,:cardType)]]>
+    </entry>
+    <entry key="isAtmAlreadyTaken">
+        <![CDATA[SELECT atmNumber,accNumber,atmPin,cvvNumber,activateDate,validFrom,validUpTo,cardType  FROM ATM_DETAIL WHERE accNumber=:accNumber]]>
+    </entry>
+    <entry key="getAllAtmDetail">
+        <![CDATA[SELECT atmNumber,accNumber,atmPin,cvvNumber,activateDate,validFrom,validUpTo,cardType FROM ATM_DETAIL ]]>
+    </entry>
+</properties>

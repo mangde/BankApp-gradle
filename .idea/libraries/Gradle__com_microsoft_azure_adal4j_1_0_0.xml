@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.azure:adal4j:1.0.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/azure/adal4j/1.0.0/adal4j-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/azure/adal4j/1.0.0/adal4j-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

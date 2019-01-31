@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.nuance.him.controller.test.AccountControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.nuance.him.controller.test.AccountControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.nuance.him.controller.test.html">com.nuance.him.controller.test</a> &gt; AccountControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.204s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDepositeAmount</td>
+<td class="success">0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAccountDetail</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetBalance</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOpenAccount</td>
+<td class="success">0.117s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWithDrawAmount</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:50:24.361 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing POST request for [/bank/deposite]
+14:50:24.365 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/deposite
+14:50:24.368 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity&lt;com.nuance.him.model.account.Account&gt; com.nuance.him.controller.account.AccountController.deposite(int,double)]
+14:50:24.368 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'accountController'
+14:50:24.398 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Amount deposited successfully 
+ Current Available Balance is : 0.0] as &quot;text/plain;charset=ISO-8859-1&quot; using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.399 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.399 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.419 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/bank/accountDetail]
+14:50:24.419 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/accountDetail
+14:50:24.420 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity&lt;com.nuance.him.model.account.Account&gt; com.nuance.him.controller.account.AccountController.getAccountDetails(int)]
+14:50:24.420 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'accountController'
+14:50:24.420 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/bank/accountDetail] is: -1
+14:50:24.420 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Account Details : null] as &quot;application/json&quot; using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.420 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.422 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/bank/getBalance]
+14:50:24.433 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/getBalance
+14:50:24.433 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity&lt;java.lang.Double&gt; com.nuance.him.controller.account.AccountController.getCurrentBalance(int)]
+14:50:24.433 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'accountController'
+14:50:24.433 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/bank/getBalance] is: -1
+14:50:24.434 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Current Available Balance is : 0.0] as &quot;text/plain;charset=ISO-8859-1&quot; using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.434 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.434 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.444 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing POST request for [/bank/addAccount]
+14:50:24.444 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/addAccount
+14:50:24.445 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity&lt;com.nuance.him.model.account.Account&gt; com.nuance.him.controller.account.AccountController.addNewAccount(com.nuance.him.model.account.Account)]
+14:50:24.445 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'accountController'
+14:50:24.471 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.nuance.him.model.account.Account] as &quot;application/json&quot; with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@a504b0f]
+14:50:24.545 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.PatternValidator'
+14:50:24.548 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.PatternValidator'
+14:50:24.551 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.553 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.554 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForNumber'
+14:50:24.557 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForNumber'
+14:50:24.557 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.557 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.560 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Customer Account  is Open successfully
+ customer Account ID: 0] as &quot;application/json&quot; using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.560 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.560 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.573 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing PUT request for [/bank/withDraw]
+14:50:24.573 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/withDraw
+14:50:24.573 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity&lt;java.lang.Double&gt; com.nuance.him.controller.account.AccountController.withDrawAmount(int,double)]
+14:50:24.573 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'accountController'
+14:50:24.574 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [Amount withDraw successfully 500.0 
+ Current Available Balance is : 0.0] as &quot;text/plain;charset=ISO-8859-1&quot; using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.574 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.574 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.1.1</a> at Jan 31, 2019 2:50:24 PM</p>
+</div>
+</div>
+</body>
+</html>

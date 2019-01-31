@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nuance.him.controller.test.TransferAmountControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-31T09:20:24" hostname="PUN-YMANGDE01" time="0.034">
+  <properties/>
+  <testcase name="testTransactionHistory" classname="com.nuance.him.controller.test.TransferAmountControllerTest" time="0.005"/>
+  <testcase name="testTransferAmount" classname="com.nuance.him.controller.test.TransferAmountControllerTest" time="0.012"/>
+  <system-out><![CDATA[14:50:24.639 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/bank/transactionHistory]
+14:50:24.639 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/transactionHistory
+14:50:24.640 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<com.nuance.him.model.transfer.TransferAmount> com.nuance.him.controller.transfer.TransferAmountController.transactionHistory(int)]
+14:50:24.640 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionController'
+14:50:24.640 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/bank/transactionHistory] is: -1
+14:50:24.642 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [[]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@a504b0f]
+14:50:24.643 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.643 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+14:50:24.661 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing POST request for [/bank/transferAmount]
+14:50:24.661 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /bank/transferAmount
+14:50:24.661 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<com.nuance.him.model.transfer.TransferAmount> com.nuance.him.controller.transfer.TransferAmountController.transferAmountApi(com.nuance.him.model.transfer.TransferAmount)]
+14:50:24.661 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionController'
+14:50:24.665 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.nuance.him.model.transfer.TransferAmount] as "application/json" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@a504b0f]
+14:50:24.668 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.669 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator'
+14:50:24.669 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForNumber'
+14:50:24.669 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForNumber'
+14:50:24.669 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.MinValidatorForNumber'
+14:50:24.671 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.hibernate.validator.internal.constraintvalidators.bv.MinValidatorForNumber'
+14:50:24.672 [Test worker] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [TransferAmount successfully  TransactionId: 0] as "application/json" using [org.springframework.http.converter.StringHttpMessageConverter@128b3d6e]
+14:50:24.672 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+14:50:24.672 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
