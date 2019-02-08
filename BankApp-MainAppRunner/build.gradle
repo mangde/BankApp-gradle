@@ -4,14 +4,17 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
+buildscript {
+    repositories {
+        mavenCentral()
+    }
 
-repositories {
-    mavenCentral()
 }
-
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:1.3.0.RELEASE'
     compile project(':BankApp-config')
     testCompile 'org.springframework.boot:spring-boot-test:2.1.1.RELEASE'
+    compile 'org.springframework.boot:spring-boot:2.1.1.RELEASE'
+    compileClasspath group: 'org.yaml', name: 'snakeyaml', version: '1.19'
     testCompile 'org.springframework:spring-test:5.1.3.RELEASE'
 }

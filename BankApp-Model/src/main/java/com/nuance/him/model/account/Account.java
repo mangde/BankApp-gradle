@@ -91,4 +91,8 @@ public class Account {
             ", customerId=" + customerId +
             '}';
     }
+
+    public void setAmount(final int amount) {
+        this.balance = amount;
+    }
 }

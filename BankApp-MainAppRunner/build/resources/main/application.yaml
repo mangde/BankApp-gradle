@@ -1,4 +1,0 @@
-baseURL: /bank
-
-server:
-    port: 8081

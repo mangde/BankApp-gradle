@@ -2,24 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="BankApp-gradle.MainApp.main" target="1.8" />
-      <module name="BankApp-gradle.MainApp.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-config.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-config.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Controller.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Controller.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Dao.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Dao.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-gradle.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-gradle.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-MainAppRunner.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-MainAppRunner.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Model.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Model.test" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Service.main" target="1.8" />
-      <module name="com.nuance.him.gradle.BankApp-Service.test" target="1.8" />
-      <module name="com.nuance.him.gradle.MainApp.main" target="1.8" />
-      <module name="com.nuance.him.gradle.MainApp.test" target="1.8" />
+      <module name="BankApp-config_main" target="1.8" />
+      <module name="BankApp-config_test" target="1.8" />
+      <module name="BankApp-Controller_main" target="1.8" />
+      <module name="BankApp-Controller_test" target="1.8" />
+      <module name="BankApp-Dao_main" target="1.8" />
+      <module name="BankApp-Dao_test" target="1.8" />
+      <module name="BankApp-gradle_main" target="1.8" />
+      <module name="BankApp-gradle_test" target="1.8" />
+      <module name="BankApp-MainAppRunner_main" target="1.8" />
+      <module name="BankApp-MainAppRunner_test" target="1.8" />
+      <module name="BankApp-Model_main" target="1.8" />
+      <module name="BankApp-Model_test" target="1.8" />
+      <module name="BankApp-Service_main" target="1.8" />
+      <module name="BankApp-Service_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

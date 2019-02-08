@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
 import com.nuance.him.controller.account.AccountController;
 import com.nuance.him.service.account.AccountService;
 
@@ -43,13 +42,5 @@ public class AccountControllerConfig {
         return new AccountController(accountService);
     }
 
-    /**
-     * bean for validation.
-     *
-     * @return validation bean
-     */
-    @Bean
-    public MethodValidationPostProcessor methodValidationPostProcessor() {
-        return new MethodValidationPostProcessor();
-    }
-}
+
+  }
